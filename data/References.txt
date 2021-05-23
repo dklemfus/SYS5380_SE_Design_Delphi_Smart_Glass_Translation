@@ -1,0 +1,7 @@
+TM_WORLD_BORDER-0.3: http://thematicmapping.org/downloads/world_borders.php
+Languages for Google Translate: https://translate.google.com/intl/en/about/languages/
+Countries by Continents: https://statisticstimes.com/geography/countries-by-continents.php 
+4GLTE Penetration: https://www.opensignal.com/sites/opensignal-com/files/data/reports/global/data-2019-05/the_state_of_mobile_experience_may_2019_0.pdf
+5G Planned: https://www.lifewire.com/5g-availability-world-4156244
+
+

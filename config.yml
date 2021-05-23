@@ -1,0 +1,41 @@
+# config.yml
+
+default:
+# Required Packages: 
+  visualizationPackages: 
+    - shiny
+    - shinydashboard
+    - shinyWidgets
+    - shinyBS
+    - leaflet
+    - leaflet.extras
+    - plotly
+    - ggplot2
+    - htmlwidgets
+    - rgdal
+    - ggpubr
+  analysisPackages:
+    - dplyr
+    - tidyr
+    - stringr
+    - lubridate
+  dataPackages:
+    - data.table
+    - Rcpp
+    - parallel
+    - devtools
+    - testthat
+    - car
+    - multcomp
+    - vcd
+    - glmnet
+    - survival
+    - caret
+  lookups:
+    StatAnalysis: "data/Country_Data_A.csv"
+    WorldBorders: "data/TM_WORLD_BORDERS-0.3/TM_WORLD_BORDERS-0.3.dbf"
+    FlagDir: "data/Flag"
+  loadableDirs:
+    - "functions"
+    - "modules"
+   
