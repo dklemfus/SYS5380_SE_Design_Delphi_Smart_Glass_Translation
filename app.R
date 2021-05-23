@@ -8,6 +8,10 @@
 #'              that some data is simulated, due to lack of available (free) data
 # Author: Dan Klemfuss (Team: The Essential Ones)
 
+
+# Note: To deploy this application to shinyapps.io, use the following commands:
+# rsconnect::deployApp(path/to/app)
+
 # Load setup script: 
 source('functions/basic_setup.R')
 
@@ -20,21 +24,24 @@ global.config$statData <<- LoadCountryData(global.config$lookups$StatAnalysis)
 global.config$worldBorders <<- LoadWorldBorders(global.config$lookups$WorldBorders)
 
 # Define libraries used (note: packages should be loaded in 'Setup' function)
-library('shiny')
-library('shinydashboard')
-library('shinyWidgets')
-library('shinyBS')
-library('plotly')
-library('ggplot2')
-library('htmlwidgets')
-library('data.table')
-library('dplyr')
-library('tidyr')
-library('stringr')
-library('lubridate')
-library('leaflet')
-library('leaflet.extras')
-library('waiter')
+library(shiny)
+library(shinydashboard)
+library(shinyWidgets)
+library(shinyBS)
+library(plotly)
+library(ggplot2)
+library(htmlwidgets)
+library(data.table)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(lubridate)
+library(leaflet)
+library(leaflet.extras)
+library(waiter)
+library(sp)
+library(RColorBrewer)
+library(yaml)
 
 ##
 ## Define the UI

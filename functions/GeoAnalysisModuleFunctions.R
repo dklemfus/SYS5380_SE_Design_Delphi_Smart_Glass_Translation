@@ -36,7 +36,6 @@ library(sp)
 #' @return A Data Frame containing the raw data, and error message
 #' @export
 LoadCountryData <- function(file.path="/data/Country_Data_A.csv"){
-  require(data.table)
   tryCatch({
     raw <- data.table::fread(file.path)
     output <- list(data=raw, error=NA)
@@ -137,7 +136,6 @@ PerformStatAnalysisOverall <- function(fips.data, type="Theoretical"){
 #
 MergeData <- function(sp, df){
   tryCatch({
-    require(sp)
     output <- merge(sp, df,by="FIPS", all=F)
     return(output)
   }, error=function(e){
